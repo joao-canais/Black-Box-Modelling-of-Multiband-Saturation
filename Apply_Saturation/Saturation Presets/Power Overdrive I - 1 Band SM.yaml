@@ -1,0 +1,25 @@
+plugin: "FabFilter Saturn 2"
+name: "Power Overdrive I - 1 Band SM" 
+
+plugin_state:
+
+  # === Bands Amount ===
+  num_active_bands: 1.0
+
+  # === Band 1 Parameters (Band 2 from multiband preset) ===
+  band_1_style: "Power Amp"
+  band_1_mix: 100.0
+  band_1_feedback_amount: 0.0
+  band_1_feedback_frequency: 10.0
+  band_1_dynamics: -0.149
+  band_1_drive: 50.0
+  band_1_drive_pan: 0.0
+  band_1_bass: 1.08
+  band_1_mid: 0.55
+  band_1_treble: -1.08
+  band_1_presence: -7.95
+  band_1_level: 2.96
+  band_1_pan: "Left: 0 dB / Right: 0 dB"
+
+  # === Master Parameters ===
+  master_level: 0.0

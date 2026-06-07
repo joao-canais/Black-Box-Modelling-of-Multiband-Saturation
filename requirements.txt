@@ -1,0 +1,26 @@
+# Deep Learning & PyTorch Ecosystem
+torch
+torchaudio
+pytorch-lightning
+
+# Audio Processing & VST Plugin Hosting
+pedalboard
+librosa
+auraloss
+
+# Training & Logging
+wandb
+tqdm
+PyYAML
+
+# Data Science & Visualization
+numpy
+matplotlib
+scipy
+
+# Jupyter Notebooks Environment
+jupyterlab
+ipykernel
+
+# Audio I/O
+soundfile
