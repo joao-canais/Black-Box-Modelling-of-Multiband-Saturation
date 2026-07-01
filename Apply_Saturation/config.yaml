@@ -1,0 +1,25 @@
+paths:
+  # Directory containing the original clean audio files (.wav)
+  input_dir: "path/to/your/input/directory"
+  
+  # Directory where the clean and saturated pairs will be saved
+  output_dir: "path/to/your/output/directory"
+  
+  # Absolute path to your VST3 plugin file (e.g., FabFilter Saturn 2)
+  vst3_path: "path/to/your/plugin.vst3"
+
+dataset_filters:
+  # Filter files based on naming convention components
+  # e.g., BS_{guitar}_EQ_{eq}_{plucking}_{expression}_{note}_{take}.wav
+  keep_filter: ["FS", "MU", "PK", "ST"]
+  
+processing:
+  # Block size for the DSP processing. 512 or 1024 is generally a safe default.
+  buffer_size: 512
+  
+  # Minimum relative difference to consider an audio file "successfully saturated" 
+  # (helps detect silent failures or if the plugin bypass is on)
+  audio_diff_threshold: 0.0001
+  
+  # Relative path to the current YAML preset containing the precise DSP parameter values
+  active_preset: "Saturation_Presets/Power Overdrive I - 4 Bands SM.yaml"

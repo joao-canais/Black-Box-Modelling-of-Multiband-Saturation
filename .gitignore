@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# ML / Treino
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+runs/
+wandb/
+lightning_logs/
+
+
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.blg
+*.bbl
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# OS / IDEs
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db
+.github/
+
+# Áudio / Dataset
+data/
+data_2/
+data_single_band/
+
+# Keep only the dummy dataset versioned
+
+# Others
+code/1.Dataset_Analysis/analysis_outputs_multiband/
+code/1.Dataset_Analysis/analysis_outputs_single_band/
+code/1.Dataset_Analysis/dataset_analysis_local.ipynb
+code/2.LSTM_Pipeline/Results/
+code/2.LSTM_Pipeline/LSTM_pipeline_local.ipynb
+code/3.WaveNet_Pipeline/Results/
+code/3.WaveNet_Pipeline/WaveNet_pipeline_local.ipynb
+code/4.Results_Analysis/Results_analysis_local.ipynb
+
+Others/
+Bibliography/
+Apply_Saturation/config_local.yaml
+Reports/
+scripts/

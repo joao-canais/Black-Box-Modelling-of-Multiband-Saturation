@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Black-Box Modelling of Multiband Saturation — Audio Examples</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page-header">
+<h1>Black-Box Modelling of Multiband Saturation — Audio Examples</h1>
+</p>This project explores black-box modelling of a multiband saturation VST plugin (FabFilter Saturn 2) applied to electric bass guitar.
+Two architectures were trained and compared on clean and saturated audio pairs:</p>
+</p> - Long Short-Term Memory (LSTM): Recurrent Neural Network</p>
+</p> - Wavenet: Dilated Causal Convolutional Neural Network </p>
+  <div class="meta">
+    <span>João Canais &amp; Mariana Magalhães — FCUL 2025/2026</span>
+    <a href="https://github.com/joao-canais/Black-Box-Modelling-of-Multiband-Saturation.git" target="_blank">GitHub repository ↗</a>
+  </div>
+</div>
+
+
+<div class="model-section">
+  <div class="model-title">Audio Examples</div>
+  <div class="style-block">
+    <div class="style-label">Fingerstyle <span>FS</span></div>
+    <div class="audio-grid">
+      <div class="audio-col">
+        <div class="col-label clean">Clean Input</div>
+        <audio controls src="Audio_Examples/FS/BS_1_EQ_1_FS_NO_1_0.wav"></audio>
+      </div>
+      <div class="audio-col">
+        <div class="col-label target">Saturn 2 (Target)</div>
+        <audio controls src="Audio_Examples/FS/BS_1_EQ_1_FS_NO_1_0_saturated.wav"></audio>
+      </div>
+      <div class="audio-col">
+        <div class="col-label lstm pred">LSTM Prediction</div>
+        <audio controls src="Audio_Examples/FS/LSTM_predicted_FS.wav"></audio>
+      </div>
+      <div class="audio-col">
+        <div class="col-label wavenet pred">WaveNet Prediction</div>
+        <audio controls src="Audio_Examples/FS/WaveNet_predicted_FS.wav"></audio>
+      </div>
+    </div>
+  </div>
+
+  <div class="style-block">
+    <div class="style-label">Muted <span>MU</span></div>
+    <div class="audio-grid">
+      <div class="audio-col">
+        <div class="col-label clean">Clean Input</div>
+        <audio controls src="Audio_Examples/MU/BS_1_EQ_1_MU_NO_1_0.wav"></audio>
+      </div>
+      <div class="audio-col">
+        <div class="col-label target">Saturn 2 (Target)</div>
+        <audio controls src="Audio_Examples/MU/BS_1_EQ_1_MU_NO_1_0_saturated.wav"></audio>
+      </div>
+      <div class="audio-col">
+        <div class="col-label lstm pred">LSTM Prediction</div>
+        <audio controls src="Audio_Examples/MU/LSTM_predicted_MU.wav"></audio>
+      </div>
+      <div class="audio-col">
+        <div class="col-label wavenet pred">WaveNet Prediction</div>
+        <audio controls src="Audio_Examples/MU/WaveNet_predicted_MU.wav"></audio>
+      </div>
+    </div>
+  </div>
+
+  <div class="style-block">
+    <div class="style-label">Picked <span>PK</span></div>
+    <div class="audio-grid">
+      <div class="audio-col">
+        <div class="col-label clean">Clean Input</div>
+        <audio controls src="Audio_Examples/PK/BS_1_EQ_1_PK_NO_1_0.wav"></audio>
+      </div>
+      <div class="audio-col">
+        <div class="col-label target">Saturn 2 (Target)</div>
+        <audio controls src="Audio_Examples/PK/BS_1_EQ_1_PK_NO_1_0_saturated.wav"></audio>
+      </div>
+      <div class="audio-col">
+        <div class="col-label lstm pred">LSTM Prediction</div>
+        <audio controls src="Audio_Examples/PK/LSTM_predicted_PK.wav"></audio>
+      </div>
+      <div class="audio-col">
+        <div class="col-label wavenet pred">WaveNet Prediction</div>
+        <audio controls src="Audio_Examples/PK/WaveNet_predicted_PK.wav"></audio>
+      </div>
+    </div>
+  </div>
+
+  <div class="style-block">
+    <div class="style-label">Slap-thumb <span>ST</span></div>
+    <div class="audio-grid">
+      <div class="audio-col">
+        <div class="col-label clean">Clean Input</div>
+        <audio controls src="Audio_Examples/ST/BS_1_EQ_1_ST_NO_1_0.wav"></audio>
+      </div>
+      <div class="audio-col">
+        <div class="col-label target">Saturn 2 (Target)</div>
+        <audio controls src="Audio_Examples/ST/BS_1_EQ_1_ST_NO_1_0_saturated.wav"></audio>
+      </div>
+      <div class="audio-col">
+        <div class="col-label lstm pred">LSTM Prediction</div>
+        <audio controls src="Audio_Examples/ST/LSTM_predicted_ST.wav"></audio>
+      </div>
+      <div class="audio-col">
+        <div class="col-label wavenet pred">WaveNet Prediction</div>
+        <audio controls src="Audio_Examples/ST/WaveNet_predicted_ST.wav"></audio>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<hr class="divider">
+
+<div class="footer">
+  FCUL — Deep Learning 2025/2026
+</div>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+plugin: "FabFilter Saturn 2"
+name: "Power Overdrive I - 4 Bands SM" 
+
+plugin_state:
+
+  # === Bands Amount ===
+  num_active_bands: 4.0
+
+  # === Crossovers ===
+  band_1_crossover_frequency: 61.227
+  band_1_crossover_slope: "24 dB/oct"
+  band_2_crossover_frequency: 249.30
+  band_2_crossover_slope: "24 dB/oct"
+  band_3_crossover_frequency: 2506.0
+  band_3_crossover_slope: "24 dB/oct"
+
+  # === Band 1 Parameters ===
+  band_1_style: "Power Amp"
+  band_1_mix: 100.0
+  band_1_feedback_amount: 0.0
+  band_1_feedback_frequency: 10.0
+  band_1_dynamics: -0.149
+  band_1_drive: 53.5
+  band_1_drive_pan: 0.0
+  band_1_bass: 0.55
+  band_1_mid: -0.79
+  band_1_treble: -5.64
+  band_1_presence: -4.32
+  band_1_level: -9.86
+  band_1_pan: "Left: 0 dB / Right: 0 dB"
+
+  # === Band 2 Parameters ===
+  band_2_style: "Power Amp"
+  band_2_mix: 100.0
+  band_2_feedback_amount: 0.0
+  band_2_feedback_frequency: 10.0
+  band_2_dynamics: -0.149
+  band_2_drive: 50.0
+  band_2_drive_pan: 0.0
+  band_2_bass: 1.08
+  band_2_mid: 0.55
+  band_2_treble: -1.08
+  band_2_presence: -7.95
+  band_2_level: 2.96
+  band_2_pan: "Left: 0 dB / Right: 0 dB"
+
+  # ef_1_input: "Band 2"
+  # ef_1_attack: 20.10
+  # ef_1_release: 132.5
+
+  # num_active_slots: 1.0
+  # slot_1_source: "EF 1"
+  # slot_1_target: "B2 Drive"
+  # slot_1_level: 0.111
+
+  # === Band 3 Parameters ===
+  band_3_style: "Power Amp"
+  band_3_mix: 100.0
+  band_3_feedback_amount: 0.0
+  band_3_feedback_frequency: 10.0
+  band_3_dynamics: -0.504
+  band_3_drive: 38.0
+  band_3_drive_pan: 0.0
+  band_3_bass: -1.41
+  band_3_mid: 0.55
+  band_3_treble: -0.55
+  band_3_presence: -0.35
+  band_3_level: -2.96
+  band_3_pan: "Left: 0 dB / Right: 0 dB"
+
+  # === Band 4 Parameters ===
+  band_4_style: "Power Amp"
+  band_4_mix: 100.0
+  band_4_feedback_amount: 0.0
+  band_4_feedback_frequency: 10.0
+  band_4_dynamics: -0.544
+  band_4_drive: 41.0
+  band_4_drive_pan: 0.0
+  band_4_bass: -0.09
+  band_4_mid: -1.08
+  band_4_treble: 0.20
+  band_4_presence: 0.35
+  band_4_level: -2.47
+  band_4_pan: "Left: 0 dB / Right: 0 dB"
+
+  # === Master Parameters ===
+  master_level: 0.0
